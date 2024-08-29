@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'medium';
+    src: url('./assets/Pretendard-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'bold';
+    src: url('./assets/Pretendard-Bold.ttf') format('truetype');
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    background-color: #8D9CB9;
+    border: none;
+    border-radius: 8px;
+
+    font-family: 'bold';
+    font-size: 20px;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    gap: 4px;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #EDEFF3;
+    border: 1px solid #D4D9E2;
+    border-radius: 4px;
+}
+
+.start {
+    background-color: #27D862;
+}
+
+.goal {
+    background-color: #0940AE;
+}
+
+.path {
+    background-color: #F15858;
+}
+
+.explored {
+    background-color: #9EBDFA;
+}
+
+.wall {
+    background-color: #05132E;
+}
+
+#msg {
+    margin-top: 14px;
+    font-family: 'medium';
+    font-size: 18px;
+    color: #F15858;
+    display: none;
+}
+
+#controls {
+    width: 30%;
+    margin: 20px 0 0 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
